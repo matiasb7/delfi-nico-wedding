@@ -1,0 +1,100 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  color: $primary-text-color;
+  font-family: $primary-font;
+  background-color: $bg-color;
+  text-align: center;
+  margin:  0;
+}
+
+h1 {
+  font-family: $primary-font;
+  font-size: 2.3rem;
+  margin:  0;
+  font-weight: 600;
+
+  @media (min-width: $tablet-md) {
+    font-size: 3.5rem;
+  }
+}
+
+h2 {
+  font-weight: 500;
+  margin:  0 0 1.5rem 0;
+  font-size: 1.8rem;
+  width: fit-content;
+
+  @media (min-width: $tablet-md) {
+    font-size: 2.8rem;
+  }
+}
+
+h3 {
+  font-weight: 400;
+  font-size: 1.5rem;
+  margin:  0 ;
+  margin-bottom: .5rem;
+
+  @media (min-width: $tablet-md) {
+    font-size: 2rem;
+    margin-bottom: 1.5rem;
+  }
+}
+
+h4 {
+  margin: 0;
+}
+
+p {
+  font-size: 1.125rem;
+  font-weight: 400;
+  margin:  0;
+  line-height: 1.7;
+
+  @media (min-width: $tablet-md) {
+    font-size: 1.8rem;
+  }
+}
+
+ul {
+  list-style: none;
+}
+
+a,button {
+  text-decoration: none;
+  outline: none;
+  border: none;
+  background: inherit;
+  color: inherit;
+  font-weight: 400;
+  font-size: 18px;
+  cursor: pointer;
+  transition: transform .4s;
+
+  &:hover {
+    transform: scale(1.1);
+    transition: transform .3s;
+  }
+}
+
+img {
+  width: 100%;
+}
+
+label,input {
+  font-family: inherit;
+}
+
+.text-container{
+  text-align: center;
+  margin: 50px auto;
+
+  & > * {
+    margin-left: auto ;
+    margin-right: auto ;
+  }
+
+}

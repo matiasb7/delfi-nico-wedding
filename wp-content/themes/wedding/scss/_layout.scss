@@ -1,0 +1,17 @@
+.wrapper {
+  width: min($max-width, calc(100% - ($padding-layout * 2)));
+  margin: 0 auto;
+}
+
+.wrapper-sm {
+  width: min($max-width-sm, calc(100% - ($padding-layout * 2)));
+  margin: 0 auto;
+}
+
+.padding_tb {
+  padding: 50px 0;
+
+  @media (min-width: 50em) {
+    padding: 60px 0;
+  }
+}
