@@ -67,8 +67,10 @@
     font-size: 22px;
     z-index: 10;
     background-color: $bg-color;
-    top: calc(100% + 15px);
+    //top: calc(100% + 15px);
+    top: 100%;
     padding-bottom: 10px;
+    padding-top: 15px;
 
     @media (min-width: $tablet-sm) {
       background-color: transparent;

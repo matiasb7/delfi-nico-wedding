@@ -58,7 +58,7 @@ class HeaderMenu {
 
             // Mobile dropdown menu
             mobileContainer.find('.menu-item').remove()
-            mobileContainer.append(selectedIconTab.clone())
+            mobileContainer.prepend(selectedIconTab.clone())
             menuItems.removeClass('hide-mobile')
             selectedIconTab.toggleClass('hide-mobile')
             header.toggleClass('active');

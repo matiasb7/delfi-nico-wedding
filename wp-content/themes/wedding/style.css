@@ -93,7 +93,7 @@ label, input {
 
 .text-container {
   text-align: center;
-  margin: 50px auto;
+  margin: 10px auto 50px;
 }
 .text-container > * {
   margin-left: auto;
@@ -179,8 +179,9 @@ label, input {
   font-size: 22px;
   z-index: 10;
   background-color: #f3f3f1;
-  top: calc(100% + 15px);
+  top: 100%;
   padding-bottom: 10px;
+  padding-top: 15px;
 }
 @media (min-width: 640px) {
   .header .menu {
@@ -269,16 +270,66 @@ label, input {
   height: 100% !important;
 }
 
+.agenda {
+  display: flex;
+  flex-direction: column;
+  gap: 80px;
+  position: relative;
+}
+.agenda:after {
+  content: "";
+  height: 100%;
+  background-color: black;
+  width: 2px;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+}
+.agenda .item {
+  justify-content: center;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  max-width: 700px;
+  margin-left: auto;
+  margin-right: auto;
+  gap: 75px;
+  align-items: center;
+  position: relative;
+}
+@media (min-width: 640px) {
+  .agenda .item {
+    gap: 150px;
+  }
+}
+.agenda .item .line {
+  height: 2px;
+  background-color: black;
+  width: 25px;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+@media (min-width: 640px) {
+  .agenda .item .line {
+    width: 40px;
+  }
+}
+.agenda .item img {
+  width: 90px;
+}
+
 .tab {
-  margin-top: 60px;
+  margin-top: 30px;
   margin-bottom: 60px;
+  padding-top: 20px;
 }
 
 .home_tab .home-img {
   max-width: 850px;
 }
 .home_tab .main-title {
-  margin-top: 80px;
+  margin-top: 40px;
   margin-bottom: 30px;
   font-weight: 400;
   font-family: "Oooh Baby", cursive;
