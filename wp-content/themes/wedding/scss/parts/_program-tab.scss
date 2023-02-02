@@ -1,13 +1,64 @@
+.program_tab {
+  position: relative;
+  .bg-image-left{
+    position: absolute;
+    opacity: .2;
+    left: 0;
+    max-width: 350px;
+    top: 0px;
+  }
+
+  .bg-image-right{
+    position: absolute;
+    opacity: .2;
+    right: 0;
+    max-width: 350px;
+    bottom: 0px;
+  }
+  .text-container{
+    > p {
+      font-size: 22px;
+    }
+  }
+
+
+  .bg-image-right, .bg-image-left {
+    display: none;
+    @media (min-width: $desktop-xs) {
+      display: block;
+    }
+  }
+
+  .end-text{
+    margin-top: 40px;
+    font-size: 25px;
+  }
+
+
+}
+
 .agenda{
   display: flex;
   flex-direction: column;
   gap: 80px;
   position: relative;
 
+  &:before {
+    content: "";
+    border-radius: 50%;
+    background-color: grey;
+    width: 10px;
+    aspect-ratio: 1/1;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: 0;
+  }
+
   &:after{
     content: "";
     height: 100%;
-    background-color: black;
+    background-color: grey;
     width: 2px;
     position: absolute;
     left: 50%;
@@ -18,7 +69,8 @@
     justify-content: center;
     display: grid;
     grid-template-columns: 1fr 1fr;
-    max-width: 700px;
+    max-width: 600px;
+    width: 100%;
     margin-left: auto;
     margin-right: auto;
     gap: 75px;
@@ -29,14 +81,30 @@
       gap: 150px;
     }
 
+    .item_text > p{
+      font-weight: 500;
+      line-height: 1.4;
+      margin-bottom: 10px;
+      position: relative;
+      @media (min-width: $tablet-sm) {
+        white-space: nowrap;
+      }
+    }
+
+    .hour {
+      font-weight: 400;
+      font-size: 1.4rem;
+    }
+
     .line{
       height: 2px;
-      background-color: black;
+      background-color: grey;
       width: 25px;
       position: absolute;
       left: 50%;
       top: 50%;
       transform: translate(-50%, -50%);
+
 
       @media (min-width: $tablet-sm) {
         width: 40px;

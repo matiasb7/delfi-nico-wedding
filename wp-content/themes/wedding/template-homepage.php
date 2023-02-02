@@ -17,7 +17,7 @@ get_header(); ?>
         <div class="menu">
             <div class="current-tab menu-item">Home</div>
             <div class="menu-item">Programa</div>
-            <div class="menu-item">Viaje</div>
+            <div class="menu-item">Propuestas Para Hacer</div>
             <div class="menu-item">Registración</div>
             <div class="menu-item">Locación</div>
         </div>
@@ -25,7 +25,7 @@ get_header(); ?>
         <div class="menu">
             <div class="current-tab menu-item">Home</div>
             <div class="menu-item">Program</div>
-            <div class="menu-item">Travel</div>
+            <div class="menu-item">Things To Do</div>
             <div class="menu-item">Registry</div>
             <div class="menu-item">Location</div>
         </div>

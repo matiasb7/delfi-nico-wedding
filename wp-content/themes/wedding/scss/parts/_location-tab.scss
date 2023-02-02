@@ -1,3 +1,18 @@
+.location_tab{
+  .text-container {
+    text-align: left;
+    p > a {
+      text-decoration: underline;
+      transition: all .3s;
+
+      &:hover {
+        color: grey;
+      }
+    }
+  }
+
+}
+
 .map {
   position: relative;
   padding-bottom: 75%; // This is the aspect ratio

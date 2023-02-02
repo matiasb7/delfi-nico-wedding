@@ -51,6 +51,20 @@
     @media (min-width: $tablet-sm) {
       margin: 50px 0;
     }
+    > h1,h2,h3,h4 {
+      margin-left: auto ;
+      margin-right: auto;
+    }
+
+    a {
+      text-decoration: underline;
+      transition: color .3s;
+
+      &:hover{
+        color: dimgray;
+      }
+    }
+
   }
 
   .registration{

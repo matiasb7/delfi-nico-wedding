@@ -1,6 +1,9 @@
 * {
   box-sizing: border-box;
 }
+html {
+  scroll-behavior: smooth;
+}
 
 body {
   color: $primary-text-color;
@@ -39,7 +42,7 @@ h3 {
   margin-bottom: .5rem;
 
   @media (min-width: $tablet-md) {
-    font-size: 2rem;
+    font-size: 2.5rem;
     margin-bottom: 1.5rem;
   }
 }
@@ -96,5 +99,4 @@ label,input {
     margin-left: auto ;
     margin-right: auto ;
   }
-
 }
