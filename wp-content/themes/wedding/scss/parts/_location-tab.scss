@@ -1,6 +1,25 @@
-.location_tab{
+.location_tab {
+  text-align: left !important;
+
   .text-container {
     text-align: left;
+
+    > * {
+      margin-left: 0 !important;
+    }
+
+    > h2:not(:first-child) {
+      margin-top: 1rem;
+    }
+
+    p {
+      font-size: 1rem;
+      @media (min-width: $tablet-md) {
+        font-size: 1.3rem;
+      }
+    }
+
+
     p > a {
       text-decoration: underline;
       transition: all .3s;

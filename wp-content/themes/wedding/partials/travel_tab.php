@@ -48,9 +48,21 @@ foreach ($fields as $key => $array){
             </div>
 
             <div class="item-content">
-                <?php if(!empty($item['text'])): ?>
+                <?php if(!empty($item['barcelona']) || !empty($item['costa_brava'])): ?>
                     <div class="text">
-                        <p><?php echo $item['text']; ?></p>
+
+                        <?php if(!empty($item['barcelona'])): ?>
+                            <div class="left">
+                               <?php echo $item['barcelona'] ; ?>
+                            </div>
+                        <?php endif; ?>
+
+                        <?php if(!empty($item['costa_brava'])): ?>
+                            <div class="right">
+                                <?php echo $item['costa_brava'] ; ?>
+                            </div>
+                        <?php endif; ?>
+
                     </div>
                 <?php endif; ?>
 

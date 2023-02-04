@@ -8,8 +8,9 @@
     object-position: center;
     object-fit: cover;
     height: 300px;
-    opacity: .8;
+    border-radius: 50px;
     margin-top: 40px;
+    box-shadow: 10px 10px 50px #ccc;
     @media (min-width: $tablet-sm) {
       height: 500px;
       margin-top: 0;
@@ -23,11 +24,13 @@
     text-transform: uppercase;
     padding: 0 5px;
     gap: 5px;
+    flex-wrap: wrap;
+
     @media (min-width: $tablet-sm) {
       justify-content: center;
-      margin: 100px 0;
+      margin: 70px 0 100px;
       gap: 100px;
-
+      flex-wrap: nowrap;
     }
 
     a{
@@ -35,9 +38,11 @@
       padding: 10px 5px;
       border-radius: 3px;
       border-bottom: 1px solid $border-color;
+      margin: 0 auto;
 
       @media (min-width: $tablet-sm) {
         font-size: 30px;
+        margin: 0;
       }
       &:hover{
         color: grey;
@@ -54,6 +59,25 @@
       gap: 50px;
       padding-top: 30px;
       padding-bottom: 30px;
+    }
+    .text{
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 20px;
+      text-align: left;
+
+      @media (min-width: $tablet-sm) {
+        grid-template-columns: 1fr 1fr;
+
+      }
+
+      p{
+        font-size: 1rem;
+        @media (min-width: $tablet-md) {
+          font-size: 1.3rem;
+        }
+      }
+
     }
 
     a {
@@ -86,6 +110,12 @@
     @media (min-width: $desktop-xxs) {
       margin-bottom: 80px;
       grid-template-columns: calc(50% - $gap/2) calc(50% - $gap/2);
+    }
+
+    image {
+      height: 100%;
+      object-fit: cover;
+      box-shadow: 10px 10px 50px #ccc;
     }
   }
 }

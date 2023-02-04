@@ -258,8 +258,25 @@ label, input {
   display: none;
 }
 
+.location_tab {
+  text-align: left !important;
+}
 .location_tab .text-container {
   text-align: left;
+}
+.location_tab .text-container > * {
+  margin-left: 0 !important;
+}
+.location_tab .text-container > h2:not(:first-child) {
+  margin-top: 1rem;
+}
+.location_tab .text-container p {
+  font-size: 1rem;
+}
+@media (min-width: 700px) {
+  .location_tab .text-container p {
+    font-size: 1.3rem;
+  }
 }
 .location_tab .text-container p > a {
   text-decoration: underline;
@@ -643,8 +660,9 @@ label, input {
   object-position: center;
   object-fit: cover;
   height: 300px;
-  opacity: 0.8;
+  border-radius: 50px;
   margin-top: 40px;
+  box-shadow: 10px 10px 50px #ccc;
 }
 @media (min-width: 640px) {
   .travel_tab .hero-img {
@@ -659,12 +677,14 @@ label, input {
   text-transform: uppercase;
   padding: 0 5px;
   gap: 5px;
+  flex-wrap: wrap;
 }
 @media (min-width: 640px) {
   .travel_tab .titles {
     justify-content: center;
-    margin: 100px 0;
+    margin: 70px 0 100px;
     gap: 100px;
+    flex-wrap: nowrap;
   }
 }
 .travel_tab .titles a {
@@ -672,10 +692,12 @@ label, input {
   padding: 10px 5px;
   border-radius: 3px;
   border-bottom: 1px solid #d6d6d6;
+  margin: 0 auto;
 }
 @media (min-width: 640px) {
   .travel_tab .titles a {
     font-size: 30px;
+    margin: 0;
   }
 }
 .travel_tab .titles a:hover {
@@ -691,6 +713,25 @@ label, input {
     gap: 50px;
     padding-top: 30px;
     padding-bottom: 30px;
+  }
+}
+.travel_tab .item-content .text {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 20px;
+  text-align: left;
+}
+@media (min-width: 640px) {
+  .travel_tab .item-content .text {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+.travel_tab .item-content .text p {
+  font-size: 1rem;
+}
+@media (min-width: 700px) {
+  .travel_tab .item-content .text p {
+    font-size: 1.3rem;
   }
 }
 .travel_tab .item-content a {
@@ -720,6 +761,11 @@ label, input {
     margin-bottom: 80px;
     grid-template-columns: calc(50% - 17.5px) calc(50% - 17.5px);
   }
+}
+.travel_tab .travel-item image {
+  height: 100%;
+  object-fit: cover;
+  box-shadow: 10px 10px 50px #ccc;
 }
 
 /*# sourceMappingURL=style.css.map */
