@@ -1,0 +1,25 @@
+.faqs_tab{
+  max-width: 1050px;
+  text-align: left;
+
+  p {
+    font-size: 18px;
+  }
+
+  sl-details::part(summary-icon) {
+    rotate: none;
+  }
+  sl-details::part(base) {
+    background-color: transparent;
+  }
+  sl-icon{
+    font-size: 18px;
+  }
+
+  sl-details::part(header){
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-weight: 700;
+    background-color: whitesmoke;
+  }
+}

@@ -20,6 +20,7 @@ get_header(); ?>
             <div class="menu-item">Propuestas Para Hacer</div>
             <div class="menu-item">Registración</div>
             <div class="menu-item">Locación</div>
+            <div class="menu-item">FAQS</div>
         </div>
     <?php else: ?>
         <div class="menu">
@@ -28,6 +29,7 @@ get_header(); ?>
             <div class="menu-item">Things To Do</div>
             <div class="menu-item">Registry</div>
             <div class="menu-item">Location</div>
+            <div class="menu-item">FAQS</div>
         </div>
     <?php endif; ?>
     <div class="language">
@@ -42,6 +44,7 @@ get_header(); ?>
 <?php get_template_part('partials/travel_tab') ?>
 <?php get_template_part('partials/registry_tab') ?>
 <?php get_template_part('partials/location_tab') ?>
+<?php get_template_part('partials/faqs_tab') ?>
 </body>
 
 <?php

@@ -3,16 +3,9 @@ $fields = get_field('program');
 $items = $fields['items'] ?? [];
 $text = $fields['text'] ?? '';
 $end_text = $fields['end_text'] ?? '';
-
-/*echo '<pre>';
-print_r($items);
-die();*/
 ?>
 
 <div class="tab program_tab wrapper">
-    <img class="bg-image-left" src="<?php echo get_template_directory_uri() . '/imgs/program-crop-bg.jpeg' ?>" alt="BG">
-    <img class="bg-image-right" src="<?php echo get_template_directory_uri() . '/imgs/program-crop-bg.jpeg' ?>" alt="BG">
-
     <?php if($text): ?>
         <div class="text-container">
             <?php echo $text ; ?>

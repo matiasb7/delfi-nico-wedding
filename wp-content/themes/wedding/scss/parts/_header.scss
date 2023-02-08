@@ -77,13 +77,13 @@
       flex-direction: row;
       justify-content: space-between;
       gap: 0;
-      max-width: 700px;
+      max-width: 900px;
       position: relative;
       padding-bottom: 0;
       padding-right: 100px;
     }
     @media (min-width: $desktop-xxs) {
-      padding-right: 0;
+      padding-right: 30px;
     }
 
 
@@ -129,7 +129,6 @@
         transform: scale(0);
         transition: all linear .2s;
       }
-
     }
   }
 
@@ -139,6 +138,10 @@
     align-items: center;
     position: absolute;
     right: 5px;
+    top: 19px;
+    @media (min-width: $tablet-sm) {
+      top: 35px;
+    }
 
     a:first-child {
       padding-right: 5px;

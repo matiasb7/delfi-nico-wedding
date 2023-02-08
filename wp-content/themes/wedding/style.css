@@ -8,14 +8,14 @@ html {
 
 body {
   color: #181818;
-  font-family: "PT Serif", sans-serif;
+  font-family: "Cormorant Garamond", serif;
   background-color: #f3f3f1;
   text-align: center;
   margin: 0;
 }
 
 h1 {
-  font-family: "PT Serif", sans-serif;
+  font-family: "Cormorant Garamond", serif;
   font-size: 2.3rem;
   margin: 0;
   font-weight: 600;
@@ -196,7 +196,7 @@ label, input {
     flex-direction: row;
     justify-content: space-between;
     gap: 0;
-    max-width: 700px;
+    max-width: 900px;
     position: relative;
     padding-bottom: 0;
     padding-right: 100px;
@@ -204,7 +204,7 @@ label, input {
 }
 @media (min-width: 1000px) {
   .header .menu {
-    padding-right: 0;
+    padding-right: 30px;
   }
 }
 .header .menu .menu-item {
@@ -249,6 +249,12 @@ label, input {
   align-items: center;
   position: absolute;
   right: 5px;
+  top: 19px;
+}
+@media (min-width: 640px) {
+  .header .language {
+    top: 35px;
+  }
 }
 .header .language a:first-child {
   padding-right: 5px;
@@ -271,11 +277,11 @@ label, input {
   margin-top: 1rem;
 }
 .location_tab .text-container p {
-  font-size: 1rem;
+  font-size: 1.2rem;
 }
 @media (min-width: 700px) {
   .location_tab .text-container p {
-    font-size: 1.3rem;
+    font-size: 1.5rem;
   }
 }
 .location_tab .text-container p > a {
@@ -414,9 +420,14 @@ label, input {
 }
 
 .tab {
-  margin-top: 30px;
+  margin-top: 50px;
   margin-bottom: 60px;
   padding-top: 20px;
+}
+@media (min-width: 640px) {
+  .tab {
+    margin-top: 30px;
+  }
 }
 
 .home_tab .home-img {
@@ -715,6 +726,9 @@ label, input {
     padding-bottom: 30px;
   }
 }
+.travel_tab .item-content a {
+  text-decoration: underline;
+}
 .travel_tab .item-content .text {
   display: grid;
   grid-template-columns: 1fr;
@@ -734,23 +748,6 @@ label, input {
     font-size: 1.3rem;
   }
 }
-.travel_tab .item-content a {
-  width: fit-content;
-  margin: 0 auto;
-  padding: 10px 15px;
-  border: 1px solid grey;
-  transition: all 0.3s;
-}
-@media (min-width: 640px) {
-  .travel_tab .item-content a {
-    padding: 15px 25px;
-  }
-}
-.travel_tab .item-content a:hover {
-  transform: none;
-  background-color: #e7e7e3;
-  color: black;
-}
 .travel_tab .travel-item {
   gap: 35px;
   display: grid;
@@ -766,6 +763,29 @@ label, input {
   height: 100%;
   object-fit: cover;
   box-shadow: 10px 10px 50px #ccc;
+}
+
+.faqs_tab {
+  max-width: 1050px;
+  text-align: left;
+}
+.faqs_tab p {
+  font-size: 18px;
+}
+.faqs_tab sl-details::part(summary-icon) {
+  rotate: none;
+}
+.faqs_tab sl-details::part(base) {
+  background-color: transparent;
+}
+.faqs_tab sl-icon {
+  font-size: 18px;
+}
+.faqs_tab sl-details::part(header) {
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-weight: 700;
+  background-color: whitesmoke;
 }
 
 /*# sourceMappingURL=style.css.map */

@@ -1,7 +1,11 @@
 .tab {
-  margin-top: 30px;
+  margin-top: 50px;
   margin-bottom: 60px;
   padding-top: 20px;
+  @media (min-width: $tablet-sm) {
+    margin-top: 30px;
+  }
+
 }
 
 .home_tab {

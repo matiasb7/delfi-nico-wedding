@@ -54,21 +54,21 @@
     display: flex;
     flex-direction: column;
     gap: 30px;
-
     @media (min-width: $tablet-sm) {
       gap: 50px;
       padding-top: 30px;
       padding-bottom: 30px;
+    }
+    a{
+      text-decoration: underline;
     }
     .text{
       display: grid;
       grid-template-columns: 1fr;
       gap: 20px;
       text-align: left;
-
       @media (min-width: $tablet-sm) {
         grid-template-columns: 1fr 1fr;
-
       }
 
       p{
@@ -78,26 +78,6 @@
         }
       }
 
-    }
-
-    a {
-      width: fit-content;
-      margin: 0 auto;
-      padding: 10px 15px;
-      border: 1px solid grey;
-      transition: all .3s;
-
-
-      @media (min-width: $tablet-sm) {
-        padding: 15px 25px;
-      }
-
-
-      &:hover{
-        transform: none;
-        background-color: #e7e7e3;
-        color: black  ;
-      }
     }
   }
 
