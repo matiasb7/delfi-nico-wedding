@@ -17,10 +17,10 @@ get_header(); ?>
         <div class="menu">
             <div class="current-tab menu-item">Home</div>
             <div class="menu-item">Programa</div>
-            <div class="menu-item">Propuestas Para Hacer</div>
-            <div class="menu-item">Registración</div>
-            <div class="menu-item">Locación</div>
-            <div class="menu-item">FAQS</div>
+            <div class="menu-item">Qué hacer</div>
+            <div class="menu-item">Regalos</div>
+            <div class="menu-item">Ubicación</div>
+            <a class="menu-item" style="font-size: 22px" href="<?php echo get_home_url() . "/rsvp" ; ?>">RSVP</a>
         </div>
     <?php else: ?>
         <div class="menu">
@@ -29,7 +29,7 @@ get_header(); ?>
             <div class="menu-item">Things To Do</div>
             <div class="menu-item">Registry</div>
             <div class="menu-item">Location</div>
-            <div class="menu-item">FAQS</div>
+            <a class="menu-item" href="<?php echo get_home_url() . "/rsvp" ; ?>">RSVP</a>
         </div>
     <?php endif; ?>
     <div class="language">
