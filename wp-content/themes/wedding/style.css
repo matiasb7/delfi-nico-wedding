@@ -768,7 +768,7 @@ label, input {
     grid-template-columns: 1fr 1fr;
   }
 }
-@media (min-width: 840px) {
+@media (min-width: 1000px) {
   .travel_tab .item-content .text {
     margin-left: -100px;
     margin-top: 0;
@@ -793,10 +793,9 @@ label, input {
     grid-template-columns: calc(50% - 17.5px) calc(50% - 17.5px);
   }
 }
-.travel_tab .travel-item image {
+.travel_tab .travel-item img {
   height: 100%;
   object-fit: cover;
-  box-shadow: 10px 10px 50px #ccc;
 }
 
 .faqs_tab {

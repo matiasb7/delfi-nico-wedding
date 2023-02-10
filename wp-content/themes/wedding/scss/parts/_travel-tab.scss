@@ -76,7 +76,7 @@
         grid-template-columns: 1fr 1fr;
       }
 
-      @media (min-width: $tablet-lg) {
+      @media (min-width: $desktop-xxs) {
         margin-left: -100px;
         margin-top: 0;
       }
@@ -102,10 +102,9 @@
       grid-template-columns: calc(50% - $gap/2) calc(50% - $gap/2);
     }
 
-    image {
+    img {
       height: 100%;
       object-fit: cover;
-      box-shadow: 10px 10px 50px #ccc;
     }
   }
 }
