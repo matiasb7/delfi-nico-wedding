@@ -1,13 +1,6 @@
 class HeaderMenu {
     constructor() {
         window.$ = window.jQuery = window.jquery = jQuery
-/*
-        $(window).load(function () {
-            if ($('#wpadminbar')[0]){
-                $('.header').css('top', $('header').css('top') + $('#wpadminbar').height())
-            }
-        });
-*/
         this.handleHeader()
     }
     handleHeader() {
@@ -24,7 +17,7 @@ class HeaderMenu {
         // Get first tab as dropdown select menu
         const firstIconTab = menuItems.first().clone()
         mobileContainer.prepend(firstIconTab)
-        iconsTabsContainer.find('.icon_box').first().addClass('hide-mobile')
+        iconsTabsContainer.find('.menu-item').first().addClass('hide-mobile')
 
         // Open Mobile dropdown
         mobileContainer.on('click',function (e){
