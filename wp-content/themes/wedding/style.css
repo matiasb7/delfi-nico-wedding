@@ -153,6 +153,7 @@ label, input {
   border-bottom: 1px solid #d6d6d6;
   left: 0;
   right: 0;
+  z-index: 1000;
 }
 @media (min-width: 640px) {
   .header {
