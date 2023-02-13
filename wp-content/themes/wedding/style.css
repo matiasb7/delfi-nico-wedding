@@ -456,11 +456,12 @@ label, input {
   margin-top: 40px;
   margin-bottom: 30px;
   font-weight: 400;
-  font-family: "WindSong", cursive;
+  font-family: "Parisienne", cursive;
 }
 @media (min-width: 640px) {
   .home_tab .main-title {
     margin-top: 30px;
+    font-size: 4rem;
   }
 }
 .home_tab .info-container {
