@@ -9,6 +9,7 @@ class FormFunctions{
         $("#guest-submit-button").click(function(e) {
             e.preventDefault();
             let guest_name = $("#guest").val();
+            guest_name = guest_name.normalize("NFD").replace(/[\u0300-\u036f]/g, "");
             if(guest_name){
                 $.ajax({
                     method: "GET",
