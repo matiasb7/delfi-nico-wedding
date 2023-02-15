@@ -65,8 +65,9 @@ class SearchApi {
     }
 
     public function search_guest_cpt_by_title($request) {
-//        $search_string = sanitize_text_field( $request['search_string'] );
         $search_string = str_replace('%20', ' ' ,$request['search_string'] );
+        $search_string = sanitize_text_field( $search_string );
+
         $args = array(
             'post_type' => 'guests',
             's' => $search_string,
