@@ -18,7 +18,7 @@ class FormFunctions{
 
                         if (data.length === 0){
                             $('.fail').remove()
-                            let failMessage = '<div class="fail">Oops! We’re having trouble finding your invite. Please try with the name of your couple, another spelling of your name or contact the couple</div>'
+                            let failMessage = '<div class="fail">Oops! We’re having trouble finding your invite. Please try writing only your first name or the name of your couple. If it doesn’t work, contact us!</div>'
                             $("#guest").after(failMessage)
                         } else {
                             $('.fail').remove()
