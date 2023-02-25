@@ -3,7 +3,7 @@ include 'wp-load.php';
 
 $args =[
     'post_type'=>'guests',
-    'ṕosts_per_page'=>-1
+    'posts_per_page'=>-1
 ];
 
 $posts = get_posts($args);
