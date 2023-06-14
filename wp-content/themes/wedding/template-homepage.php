@@ -27,7 +27,7 @@ get_header(); ?>
             <div class="current-tab menu-item">Home</div>
             <div class="menu-item">Program</div>
             <div class="menu-item">Things To Do</div>
-            <div class="menu-item">Registry</div>
+            <div class="menu-item">Gifts</div>
             <div class="menu-item">Location</div>
             <a class="menu-item" href="<?php echo get_home_url() . "/rsvp" ; ?>">RSVP</a>
         </div>
