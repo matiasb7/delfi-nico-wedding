@@ -10,6 +10,7 @@ $text = $fields['text'] ?? '';
 $registration_button_text = $fields['registration_button_text'] ?? ''; ?>
 
 <div class="tab home_tab wrapper">
+<!--  Actions Test  -->
     <?php if($title): ?>
         <h1 class="main-title"><?php echo $title ?></h1>
     <?php endif; ?>
