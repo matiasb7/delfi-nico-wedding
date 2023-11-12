@@ -1,8 +1,7 @@
 <?php
 /**
- * Template Name: rsvp
+ * Template Name: Guests list
  **/
-
 get_header(); ?>
 <header class="rsvp-header wrapper">
     <h2>RSVP</h2>

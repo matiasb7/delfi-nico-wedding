@@ -5,7 +5,6 @@
   @media (min-width: $tablet-sm) {
     margin-top: 30px;
   }
-
 }
 
 .home_tab {
@@ -30,7 +29,6 @@
     flex-direction: column;
     align-items: center;
     max-width: 800px;
-    //margin-left: 0 auto;
     margin-left: auto;
     margin-right: auto;
 
@@ -67,19 +65,16 @@
     a {
       text-decoration: underline;
       transition: color .3s;
-
       &:hover{
         color: dimgray;
       }
     }
-
   }
 
   .registration{
     padding: 25px 10px;
     border-top: 1px solid $border-color;
     border-bottom: 1px solid $border-color;
-
     a {
       font-weight: 500;
       font-size: 30px;

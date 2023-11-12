@@ -1,45 +1,33 @@
 <?php
-
-$fields = get_field('home');
-
-$title = $fields['title'] ?? '';
-$image = $fields['hero_image'] ?? '';
-$date = $fields['date'] ?? '';
-$location = $fields['location'] ?? '';
-$text = $fields['text'] ?? '';
-$registration_button_text = $fields['registration_button_text'] ?? ''; ?>
-
-<div class="tab home_tab wrapper">
-<!--  Actions Test  -->
-    <?php if($title): ?>
-        <h1 class="main-title"><?php echo $title ?></h1>
+$fields = get_field('home'); ?>
+<section role='tabpanel' class="tab home_tab wrapper">
+    <?php if(!empty($fields['title'])): ?>
+        <h1 class="main-title"><?php echo $fields['title'] ?></h1>
     <?php endif; ?>
 
-    <?php if($image): ?>
-        <img class="home-img" src="<?php echo $image['url'] ?>" alt="<?php echo $image['alt'] ?>">
+    <?php if(!empty($fields['hero_image'])): ?>
+        <img class="home-img" src="<?php echo $fields['hero_image']['url'] ?>" alt="<?php echo $fields['hero_image']['alt'] ?>">
     <?php endif; ?>
 
-    <?php if($date || $location): ?>
     <div class="info-container">
-        <?php if($date): ?>
-            <h2><?php echo $date ?></h2>
+        <?php if(!empty($fields['date'])): ?>
+            <h2><?php echo $fields['date'] ?></h2>
         <?php endif; ?>
 
-        <?php if($date): ?>
-            <h2><?php echo $location ?></h2>
+        <?php if(!empty($fields['location'])): ?>
+            <h2><?php echo $fields['location'] ?></h2>
         <?php endif; ?>
     </div>
-    <?php endif; ?>
 
-    <?php if($text): ?>
+    <?php if(!empty($fields['text'])): ?>
         <div class="more-info">
-            <?php echo $text; ?>
+            <?php echo $fields['text']; ?>
         </div>
     <?php endif; ?>
 
-    <?php if($registration_button_text): ?>
-    <div class="registration">
-        <a href="<?php echo get_home_url() . '/rsvp' ?> "><?php echo $registration_button_text; ?></a>
-    </div>
+    <?php if(!empty($fields['registration_button_text'])): ?>
+        <div class="registration">
+            <a href="<?php echo get_home_url() . '/rsvp' ?> "><?php echo $fields['registration_button_text']; ?></a>
+        </div>
     <?php endif; ?>
-</div>
+</section>

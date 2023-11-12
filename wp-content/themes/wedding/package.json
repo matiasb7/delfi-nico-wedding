@@ -1,0 +1,17 @@
+{
+  "name": "wedding",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "dev": "sass --watch style.scss style.css --source-map",
+    "build": "sass style.scss style.css --source-map",
+    "deploy": "sass style.scss style.min.css --style=compressed"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "clean-css-cli": "^5.6.2",
+    "sass": "^1.69.5"
+  }
+}
